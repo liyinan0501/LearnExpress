@@ -3,8 +3,8 @@ const app = express()
 
 // 1. import router module
 const router = require('./3-router')
-// 2. implement router module
-app.use(router)
+// 2. implement router module and add a visit prefix
+app.use('/api', router)
 
 // app.use() 注册全局中间件
 
