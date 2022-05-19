@@ -6,6 +6,7 @@ const app = express()
 
 // Serving multiple static folders
 app.use(express.static('./files'))
+//http://127.0.0.1/
 
 // if both folders have index.html, the first one will be fund and send to client
 
