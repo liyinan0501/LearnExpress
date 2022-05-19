@@ -5,9 +5,11 @@
 const express = require('express')
 const app = express()
 
+// put middleware at first position where is before all of routes
 const mw = function (req, res, next) {
   console.log('This is middleware')
   next()
+  // next at end of function
 }
 
 // register mw as a global middleware

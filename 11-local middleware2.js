@@ -12,7 +12,8 @@ const mw2 = (req, res, next) => {
   next()
 }
 
-app.get('/', mw1, mw2, (req, res) => {
+// app.get('/', mw1, mw2, (req, res) => {
+app.get('/', [mw1, mw2], (req, res) => {
   res.send(`Home Page`)
 })
 
