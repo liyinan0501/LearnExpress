@@ -9,6 +9,7 @@ app.use(parser.urlencoded({ extended: false }))
 app.use(parser.json())
 
 app.post('/user', (req, res) => {
+  // 如果没配置line9, req.body = undifined
   console.log(req.body)
   res.send('ok')
 })
