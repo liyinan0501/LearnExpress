@@ -28,8 +28,8 @@ app.get('/', (req, res) => {
 app.get('/user/:id/:name', (req, res) => {
   // via req.params can get the dynamic parameter from client GET request
   // default req.params is empty object
-  console.log(req.params)
-  res.send(req.params) // { id: '1' }
+  console.log(req.params) //{ id: '1', name: 'rose' }
+  res.send(req.params) // { "id": "1", "name": "rose" }
   // http://127.0.0.1/user/1/rose
 })
 
